@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Application</title>
+	<link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+<body>
+	<h1>Loan Application</h1>
+	<form>
+		<fieldset>
+			<legend>Personal Information</legend>
+			First name:<br>
+			<input type="text" name="firstname"><br>
+			Middle initial:<br>
+			<input type="text" name="middlei"><br>
+			Last name:<br>
+			<input type="text" name="lastname"><br>
+			Address:<br>
+			<input type="text" name="address"><br>
+			Telephone number:<br>
+			<input type="telephone" name="telephone"><br>
+			Email address:<br>
+			<input type="email" name="email"><br>
+			LinkedIn URL<br>	
+			<input type="url" name="linkedin"><br>
+		</fieldset><br>	
+		<fieldset>
+			<legend>Work Informaiton</legend>
+			Occupation:<br>
+			<input type="text" name="occupation"><br>
+			Employer:<br>
+			<input type="text" name="employer"><br>
+			Employer address:<br>
+			<input type="text" name="employeraddress"><br>
+		</fieldset><br>	
+		<fieldset>
+			<legend>Loan Information</legend>
+			Type of loan:<br>
+			<input type="radio" name="loan" value="commercial"> Commercial<br>
+			<input type="radio" name="loan" value="realestate"> Real estate<br>
+			<input type="radio" name="loan" value="personal"> Personal<br>
+			<input type="radio" name="loan" value="mortgage">Mortgage<br>
+			Requested amount of loan:<br>
+			<input type="text" name="amount"><br>
+			Requested loan length:<br>
+			<select name="length">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="30">30</option>
+			</select><br>
+			Check all special conditions:<br>
+			<input type="checkbox" name="conditions" value="downpayment">I have a down payment<br>
+			<input type="checkbox" name="conditions" value="outofstate">Out-of-state resident<br>
+			<input type="checkbox" name="conditions" value="married">Married<br>
+			<input type="checkbox" name="conditions" value="co-signed">Loan will be co-signed<br>
+		</fieldset>	
+		Additional comments:<br>
+		<textarea name="comments" rows="5" cols="100"></textarea><br>
+		<input type="submit" value="Submit Form">
+	</form>
+</body>
+</html>
